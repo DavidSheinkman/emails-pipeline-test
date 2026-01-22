@@ -3,7 +3,7 @@ from pymongo import MongoClient
 
 MONGO_URI = os.getenv("MONGODB_URI")
 client = MongoClient(MONGO_URI)
-db = client.get_database()
+db = client.get_database("app")
 
 artists_collection = db["artists"]
 new_events_collection = db["newevents"]
