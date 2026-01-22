@@ -3,8 +3,10 @@ import smtplib
 from email.message import EmailMessage
 from mongodb_helper import emailevents_collection
 
-EMAIL_USER = os.environ.get("EMAIL_USER")
-EMAIL_PASSWORD = os.environ.get("EMAIL_PASSWORD")
+
+EMAIL_USER = os.getenv("EMAIL_USER")
+EMAIL_PASS = os.getenv("EMAIL_PASS")
+
 
 def send_email(to_email, artist, event):
     msg = EmailMessage()
