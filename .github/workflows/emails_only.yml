@@ -1,7 +1,6 @@
 name: Emails Only
 
 on:
-  schedule:
   workflow_dispatch:      # also allows manual run
 
 jobs:
