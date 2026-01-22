@@ -4,8 +4,8 @@ name: Daily Email Pipeline
 on:
   workflow_dispatch:
   schedule:
-    # “At 13:37 on every day-of-week from Monday through Friday.”
-    - cron: "0 23 * * *"
+    # “At 22:45 on every day-of-week.”
+    - cron: "45 22 * * *"
 
 jobs:
   run_pipeline:
