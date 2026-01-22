@@ -5,7 +5,7 @@ from mongodb_helper import emailevents_collection
 
 
 EMAIL_USER = os.getenv("EMAIL_USER")
-EMAIL_PASS = os.getenv("EMAIL_PASS")
+EMAIL_PASSWORD = os.getenv("EMAIL_PASS")
 
 
 def send_email(to_email, artist, event):
