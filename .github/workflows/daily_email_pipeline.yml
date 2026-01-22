@@ -28,6 +28,9 @@ jobs:
           echo "EMAIL_USER=${{ secrets.EMAIL_USER }}" >> $GITHUB_ENV
           echo "EMAIL_PASS=${{ secrets.EMAIL_PASSWORD }}" >> $GITHUB_ENV
 
+      - name: get events from RA
+        run: python update_events.py
+        
       - name: Generate email events
         run: python generate_email_events.py
 
